@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<FrameLayout-->
+                <!--android:id="@+id/frame_lay"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="200dp">-->
+                <!--<com.zhulaozhijias.zhulaozhijia.widgets.sampleview.SampleView-->
+                    <!--android:id="@+id/sampleView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent" />-->
+            <!--</FrameLayout>-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="280dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:background="@drawable/pictruer"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <ImageView
+                            android:id="@+id/china"
+                            android:src="@drawable/china"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                        <RelativeLayout
+                            android:layout_marginBottom="-10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linearLayout"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+
+                        <com.zhulaozhijias.zhulaozhijia.widgets.UPMarqueeView
+                            android:id="@+id/marqueeView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/lub_rt"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="4dp">
+
+                        </com.zhulaozhijias.zhulaozhijia.widgets.UPMarqueeView>
+
+                        <RelativeLayout
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/lub_rt"
+                            android:visibility="gone"
+                            android:background="@drawable/xml_oval_half_transparent_bg_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <ImageView
+                                android:layout_marginTop="3dp"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:src="@mipmap/portrait"
+                                android:layout_centerVertical="true"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:id="@+id/lunbo_touxiang" />
+                            <TextView
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginRight="8dp"
+                                android:textColor="#ffe117"
+                                android:text="我已捐款0元"
+                                android:id="@+id/lunbo_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:textSize="14sp"
+                                android:maxLines="1"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/lunbo_touxiang"
+                                android:layout_toEndOf="@+id/lunbo_touxiang" />
+                        </RelativeLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2.3"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/lin_weight_up"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1.2">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                            <RelativeLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="1">
+
+                                                <ImageView
+                                                    android:id="@+id/imageView4"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_alignParentStart="true"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_marginLeft="10dp"
+                                                    android:src="@drawable/king" />
+
+                                                <TextView
+                                                    android:id="@+id/shouye_name"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="           "
+                                                    android:textColor="#333333"
+                                                    android:textSize="20sp"
+                                                    android:layout_marginLeft="20dp"
+                                                    android:layout_alignParentBottom="true"
+                                                    android:layout_alignParentLeft="true"
+                                                    android:layout_alignParentStart="true" />
+
+                                                <RelativeLayout
+                                                    android:layout_width="60dp"
+                                                    android:layout_height="25dp"
+                                                    android:layout_alignParentBottom="true"
+                                                    android:layout_marginLeft="3dp"
+                                                    android:layout_marginStart="3dp"
+                                                    android:layout_toEndOf="@+id/shouye_name"
+                                                    android:layout_toRightOf="@+id/shouye_name"
+                                                    android:textColor="#FFA3B3">
+
+                                                    <TextView
+                                                        android:id="@+id/shouye_point"
+                                                        android:layout_width="50dp"
+                                                        android:layout_height="15dp"
+                                                        android:layout_alignParentBottom="true"
+                                                        android:layout_alignParentLeft="true"
+                                                        android:layout_alignParentStart="true"
+                                                        android:layout_gravity="bottom"
+                                                        android:layout_marginBottom="3dp"
+                                                        android:layout_marginLeft="7dp"
+                                                        android:background="@drawable/grey_round_border_3"
+                                                        android:gravity="center"
+                                                        android:text="0"
+                                                        android:textColor="#FFA3B3"
+                                                        android:textSize="12dp" />
+
+                                                    <ImageView
+                                                        android:id="@+id/heart_time"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="19dp"
+                                                        android:layout_alignParentBottom="true"
+                                                        android:layout_alignParentLeft="true"
+                                                        android:layout_alignParentStart="true"
+                                                        android:layout_marginBottom="2dp"
+                                                        android:src="@drawable/heart_fense_1" />
+                                                </RelativeLayout>
+                                            </RelativeLayout>
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/shouye_tianshu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+
+
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+                                            <TextView
+                                                android:id="@+id/shouyexinx"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:layout_marginLeft="20dp"
+                                                android:text="未登录，请先登录/注册"
+                                                android:textColor="#4D4D4D"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/shouye_day"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignTop="@+id/shouyexinx"
+                                                android:layout_toEndOf="@+id/shouyexinx"
+                                                android:layout_toRightOf="@+id/shouyexinx"
+                                                android:text=""
+                                                android:textColor="#B62424"
+                                                android:textSize="15sp" />
+
+                                            <TextView
+                                                android:id="@+id/shouye_day_text"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_alignBaseline="@+id/shouye_day"
+                                                android:layout_alignBottom="@+id/shouye_day"
+                                                android:layout_toEndOf="@+id/shouye_day"
+                                                android:layout_toRightOf="@+id/shouye_day"
+                                                android:text="天"
+                                                android:textColor="#4D4D4D"
+                                                android:textSize="15sp"
+                                                android:visibility="invisible"
+                                                 />
+                                        </RelativeLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:weightSum="1">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/juanzengjilu"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentBottom="true"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="25dp"
+                                        android:src="@drawable/home_button" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                        <ImageView
+                            android:id="@+id/sign_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linearLayout"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/sign" />
+
+                        <!--<com.zhulaozhijias.zhulaozhijia.widgets.view.HeartHonorLayout-->
+                            <!--android:id="@+id/heart_layout"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="200dp"-->
+                            <!--android:layout_above="@+id/sign_btn"-->
+                            <!--android:layout_alignLeft="@+id/sign_btn"-->
+                            <!--android:layout_alignStart="@+id/sign_btn" >-->
+                            <!---->
+                        <!--</com.zhulaozhijias.zhulaozhijia.widgets.view.HeartHonorLayout>-->
+                    </RelativeLayout>
+                    <!--<ImageView-->
+                    <!--android:src="@drawable/laoren_lizi"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:id="@+id/imageView2"-->
+                    <!--android:layout_marginBottom="45dp"-->
+                    <!--android:layout_marginTop="0dp"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EBEBEB">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/huzhu_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/huzhu_plan" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="9dp"
+                            android:drawablePadding="4dp"
+                            android:text="1.加入计划"
+                            android:textColor="#333333" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/anli_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/anli" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="9dp"
+                            android:drawablePadding="4dp"
+                            android:text="2.我要捐赠"
+                            android:textColor="#333333" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/heart_rank_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:id="@+id/diandian"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/invitation" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="9dp"
+                            android:drawablePadding="4dp"
+                            android:text="3.爱心捐助"
+                            android:textColor="#333333" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:id="@+id/invite_friend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectableItemBackground">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/home_apply" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="9dp"
+                            android:drawablePadding="4dp"
+                            android:text="4.申请救助"
+                            android:textColor="#333333" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/dynamic_new" />
+
+                        <TextView
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#EBEBEB" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Relative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8"
+                    android:orientation="vertical">
+
+                    <com.zhulaozhijias.zhulaozhijia.widgets.AutoTextView
+                        android:id="@+id/mTextView02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView7"-->
+                            <!--android:layout_width="2dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_alignParentLeft="true"-->
+                            <!--android:layout_alignParentStart="true"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_marginBottom="10dp"-->
+                            <!--android:layout_marginLeft="17dp"-->
+                            <!--android:layout_marginStart="17dp"-->
+                            <!--android:layout_marginTop="10dp"-->
+                            <!--android:background="#E1C066" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我为人人、人人为我、互帮互助、幸福享老"
+                            android:textColor="#EE9A00"
+                            android:textSize="17dp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+                    android:id="@+id/jcVideoPlayerStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp">
+
+                </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#EBEBEB" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#E1C066" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_toEndOf="@+id/textView74"
+                        android:layout_toRightOf="@+id/textView74"
+                        android:text="战略合作"
+                        android:textColor="#4D4D4D"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D6D6D6" />
+
+                <LinearLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+
+                                android:text="四川助老之家健康产业有限公司" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="深圳前海云泰股权投资基金管理股份有限公司" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:text="贵州茅台集团白金酒有限责任公司" />
+                        </RelativeLayout>
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_marginLeft="15dp"-->
+                                <!--android:text="四川助老之家科技有限公司" />-->
+                        <!--</RelativeLayout>-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="0dp"-->
+                            <!--android:layout_weight="1">-->
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_marginLeft="15dp"-->
+                                <!--android:text="四川助老之家文化传播有限公司" />-->
+                        <!--</RelativeLayout>-->
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/yuntai" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/zhulaojia" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#EBEBEB">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="©2017 四川省养老助老服务发展基金会" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

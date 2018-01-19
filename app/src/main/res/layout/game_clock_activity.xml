@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AC141C">
+
+            <LinearLayout
+                android:id="@+id/mine_clock_back"
+                android:orientation="horizontal"
+                android:layout_width="55dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="返回"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="早起打卡"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/activity_ikon">
+
+                    <RelativeLayout
+                        android:id="@+id/game_clock_headings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="123dp"
+                        android:layout_marginStart="123dp"
+                        android:layout_marginTop="25dp">
+
+                        <ImageView
+                            android:id="@+id/game_clock_heading"
+                            android:layout_width="55dp"
+                            android:layout_height="55dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@mipmap/portrait" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/game_clock_heading"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_toEndOf="@+id/game_clock_heading"
+                            android:layout_toRightOf="@+id/game_clock_heading"
+                            android:text="我的战绩"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/game_clock_headings"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="当前参与早起打卡挑战的人数"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView70"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/textView69"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="明早打卡可随机瓜分"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/today_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="#FF730D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="元"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="110dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/textView69"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginRight="55dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/textview_touming_round_border">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/textview_bantouming_round_border"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1.4">
+
+                                <TextView
+                                    android:id="@+id/textView71"
+                                    android:layout_width="40dp"
+                                    android:layout_height="2dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toLeftOf="@+id/textView73"
+                                    android:layout_toStartOf="@+id/textView73"
+                                    android:background="#9D322D" />
+
+                                <TextView
+                                    android:id="@+id/textView73"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+
+                                    android:layout_centerVertical="true"
+                                    android:text="打卡规则"
+                                    android:textColor="#9D322D" />
+
+                                <TextView
+                                    android:id="@+id/textView72"
+                                    android:layout_width="40dp"
+                                    android:layout_height="2dp"
+                                    android:layout_alignBaseline="@+id/textView71"
+                                    android:layout_alignBottom="@+id/textView71"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_toEndOf="@+id/textView73"
+                                    android:layout_toRightOf="@+id/textView73"
+                                    android:background="#9D322D" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="1.支付1元加入挑战"
+                                    android:textColor="#9D322D" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="2.早上5:00—8:00打卡"
+                                    android:textColor="#9D322D" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="45dp"
+                                    android:text="3.准时打卡的人平分挑战金"
+                                    android:textColor="#9D322D" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/game_clock_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/orange_round_border">
+
+                    <Button
+                        android:id="@+id/game_clock_button_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/orange_round_border"
+                        android:text="点击打卡"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/daojishi_rt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone">
+
+
+                        <TextView
+                            android:id="@+id/tvtime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:gravity="center"
+                            android:text="距离打卡时间00小时"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvtime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/tvtime1"
+                            android:layout_toRightOf="@+id/tvtime1"
+                            android:gravity="center"
+                            android:text="00分"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tvtime3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tvtime2"
+                            android:layout_alignBottom="@+id/tvtime2"
+                            android:layout_toEndOf="@+id/tvtime2"
+                            android:layout_toRightOf="@+id/tvtime2"
+                            android:gravity="center"
+                            android:text="00秒"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/invition_zaoqi"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/game_clock_button"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/textview_round_border_orange"
+                    android:text="邀请好友加入挑战"
+                    android:textColor="#FF730D"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8">
+
+                    <com.zhulaozhijias.zhulaozhijia.widgets.AnimationPercentPieView
+                        android:id="@+id/animationpercentpieView"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-15dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/good_number"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="14dp"
+                        android:text="上期打卡战况"
+                        android:textColor="#333333"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/good_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="0人"
+                        android:textColor="@color/orange2"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/good_number"
+                        android:layout_alignBottom="@+id/good_number"
+                        android:layout_toEndOf="@+id/good_number"
+                        android:layout_toRightOf="@+id/good_number"
+                        android:text="成功"
+                        android:textColor="#333333"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/fail_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/good_number"
+                        android:layout_marginTop="14dp"
+                        android:text="0人"
+                        android:textColor="@color/orange1"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/fail_number"
+                        android:layout_alignBottom="@+id/fail_number"
+                        android:layout_toEndOf="@+id/fail_number"
+                        android:layout_toRightOf="@+id/fail_number"
+                        android:text="失败"
+                        android:textColor="#333333"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/morning_img"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/portrait" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/morning_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-25dp"
+                        android:src="@drawable/activity_early" />
+
+                    <TextView
+                        android:id="@+id/morning_name"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView23"
+                        android:layout_centerHorizontal="true"
+                        android:text="某某某" />
+
+                    <TextView
+                        android:id="@+id/morning_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/morning_name"
+                        android:layout_centerHorizontal="true"
+                        android:text="5:00:00打卡"
+                        android:textColor="#FF730D" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/lucky_img"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/portrait" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView232"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lucky_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-31dp"
+                        android:src="@drawable/activity_oldman" />
+
+                    <TextView
+                        android:id="@+id/lucky_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView232"
+                        android:layout_centerHorizontal="true"
+                        android:text="某某某" />
+
+                    <TextView
+                        android:id="@+id/lucky_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lucky_name"
+                        android:layout_centerHorizontal="true"
+                        android:text="5元"
+                        android:textColor="#FF730D" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/early_img"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/portrait" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView2322"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/early_img"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-22dp"
+                        android:src="@drawable/activity_power" />
+
+                    <TextView
+                        android:id="@+id/early_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView2322"
+                        android:layout_centerHorizontal="true"
+                        android:text="某某某" />
+
+                    <TextView
+                        android:id="@+id/early_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/early_name"
+                        android:layout_centerHorizontal="true"
+                        android:text="5天"
+                        android:textColor="#FF730D" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

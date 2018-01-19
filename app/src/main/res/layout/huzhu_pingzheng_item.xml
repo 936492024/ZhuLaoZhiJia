@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="0.9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#333333"
+                    android:text="电子凭证"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginStart="19dp"
+                    android:id="@+id/textView31"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                     >
+                    <LinearLayout
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginLeft="19dp"
+                            android:textColor="#333333"
+                            android:text="凭证编号："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:textColor="#333333"
+                            android:id="@+id/pingzheng_number"
+                            android:layout_marginBottom="10dp"
+                            android:text="No.0003909104"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/chapter" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="#AC141C"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout8">
+
+                    <LinearLayout
+                        android:layout_weight="1.2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginLeft="19dp"
+                            android:textColor="#333333"
+                            android:text="互助计划："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_weight="2"
+                    android:id="@+id/pingzheng_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="中青年抗癌计划"
+                    android:textColor="#333333" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:id="@+id/pingzheng_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/linearLayout8"
+                    android:layout_marginTop="8dp"
+                    android:text="公估机构对会员实际病情和对平台贡献度进行评估给出最终健康救助金额度，最高可达30万人民币。"
+                    android:textColor="#333333" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="#F0F0F0"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <LinearLayout
+                    android:layout_weight="1.2"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textColor="#333333"
+                        android:layout_marginLeft="19dp"
+                        android:text="健康受益人："
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                    <TextView
+                        android:textColor="#333333"
+                        android:layout_marginLeft="19dp"
+                        android:text="身份证号码："
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:textColor="#333333"
+                        android:layout_marginLeft="19dp"
+                        android:text="加入计划时间："
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:textColor="#333333"
+                        android:layout_marginLeft="19dp"
+                        android:text="静默期："
+                        android:layout_weight="1.3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:id="@+id/pingzheng_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="健康受益人：欧阳雨露"
+                   />
+                    <TextView
+                    android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:id="@+id/pingzheng_idcard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="511525197504****39"
+                     />
+
+                    <TextView
+                        android:layout_marginRight="19dp"
+                    android:layout_weight="1"
+                    android:textColor="#333333"
+                    android:id="@+id/pingzheng_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:text="2017年06月03日"
+                     />
+
+                    <RelativeLayout
+                        android:layout_weight="1.3"
+                        android:layout_marginRight="19dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:textColor="#333333"
+                            android:id="@+id/jingmoqi_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017年06月03日-2017年06月03日"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

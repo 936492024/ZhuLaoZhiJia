@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:background="#00000000">
+
+
+
+
+        <!--<com.zhulaozhijias.zhulaozhijia.widgets.sampleview.SampleView-->
+            <!--android:id="@+id/sampleView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+
+        <!--<View-->
+            <!--android:id="@+id/viewview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+
+    <RelativeLayout
+        android:id="@+id/china_imas"
+        android:background="@drawable/win"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_above="@+id/china_ima"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/china_ima">
+        <ImageView
+            android:src="@drawable/china"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/system_color">
+
+            <LinearLayout
+                android:id="@+id/juanzengjilu__back"
+                android:orientation="horizontal"
+                android:layout_width="55dp"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="返回"
+                            android:textColor="@color/white"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="捐赠记录"
+                android:textSize="18dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/acount_progress_bar_1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            style="?android:attr/progressBarStyleSmall"
+            />
+        <ListView
+            android:id="@+id/juanzeng_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/juanzengjilu_defaults"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/juanzhu_listview"
+            android:layout_toRightOf="@+id/juanzhu_listview"
+            android:layout_toEndOf="@+id/juanzhu_listview"
+            android:layout_marginTop="74dp">
+            <ImageView
+                android:src="@drawable/defaults"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageView9" />
+
+            <TextView
+                android:textColor="#333333"
+                android:textSize="15dp"
+                android:text="您还没有参加过捐赠，没有记录哦！"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/imageView9"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/juanzeng_btn"
+                android:text="立即捐赠"
+                android:textColor="@color/white"
+                android:background="@drawable/red_round_border"
+                android:layout_height="35dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

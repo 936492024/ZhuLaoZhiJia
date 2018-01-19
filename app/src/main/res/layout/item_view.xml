@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:id="@+id/linearlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/xml_oval_half_transparent_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/lun_im1" />
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"
+            android:text="互帮互助基金"
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lun_im1"
+            android:layout_toEndOf="@+id/lun_im1" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/rl2"
+        android:background="@drawable/xml_oval_half_transparent_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerVertical="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/lun_im2" />
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/white"
+            android:text="互帮互助基金"
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/lun_im2"
+            android:layout_toEndOf="@+id/lun_im2" />
+    </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

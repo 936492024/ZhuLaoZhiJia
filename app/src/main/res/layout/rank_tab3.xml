@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.zhulaozhijias.zhulaozhijia.widgets.PullRecyclerView
+            android:id="@+id/heart_recycleview3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"/>
+    </LinearLayout>
+    <TextView
+        android:background="#EBEBEB"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <RelativeLayout
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="70dp">
+            <TextView
+                android:text="4"
+                android:id="@+id/heart_no4_silver_3"
+                android:src="@mipmap/tongpai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:id="@+id/heart_no4_head_3"
+                android:src="@mipmap/portrait"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/heart_no4_silver_3"
+                android:layout_toEndOf="@+id/heart_no4_silver_3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+            <TextView
+                android:id="@+id/heart_no4_nickname_3"
+                android:textColor="#444"
+                android:text="助人为乐"
+                android:textSize="17dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginBottom="-5dp"
+                android:layout_above="@+id/heart_no45_zan"
+                android:layout_toRightOf="@+id/heart_no4_head_3"
+                android:layout_toEndOf="@+id/heart_no4_head_3" />
+            <ImageView
+                android:src="@mipmap/juanzhujine"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:id="@+id/yaoqing_img"
+                android:layout_marginTop="-5dp"
+                android:layout_below="@+id/heart_no45_zannum"
+                android:layout_alignLeft="@+id/heart_no4_nickname_3"
+                android:layout_alignStart="@+id/heart_no4_nickname_3" />
+
+            <TextView
+                android:textSize="13dp"
+                android:text="累计捐赠"
+                android:layout_marginTop="-5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/heart_no45_zan"
+                android:layout_toRightOf="@+id/yaoqing_img"
+                android:layout_toEndOf="@+id/yaoqing_img"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+            <TextView
+                android:textSize="15sp"
+                android:id="@+id/heart_no4_personnum_3"
+                android:text="1052"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4" />
+
+            <ImageView
+                android:id="@+id/heart_no45_zan"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/heart_no45_zannum"
+                android:layout_toStartOf="@+id/heart_no45_zannum" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/heart_no45_zannum"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/woyaojuan_btn__3"
+                android:textColor="#AC141C"
+                android:text="@string/rt12_3"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

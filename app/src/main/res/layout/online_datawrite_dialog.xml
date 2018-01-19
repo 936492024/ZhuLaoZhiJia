@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="@drawable/textview_round_border">
+
+    <TextView
+        android:text="您当前距离下一级还需111颗心,加油哦"
+        android:layout_width="200dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:textColor="#298EE3"
+        android:id="@+id/quding_dialog"
+        android:text="确定"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

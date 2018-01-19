@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AC141C">
+
+            <LinearLayout
+                android:id="@+id/mine_aixin_back"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="返回"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="爱心兑换"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="爱心值"
+                        android:textColor="#ff333333"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:drawablePadding="9dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/zhanghu_heart"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/mine_acount_love_code" />
+                    <TextView
+                        android:textColor="#ff333333"
+                        android:text="0"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/zhanghu_heart"
+                        android:layout_marginBottom="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/mine_acount_love_code"
+                        android:layout_alignEnd="@+id/mine_acount_love_code" />
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/heart_fense_1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignBottom="@+id/zhanghu_heart"
+                        android:layout_toLeftOf="@+id/zhanghu_heart"
+                        android:layout_toStartOf="@+id/zhanghu_heart" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textView6046"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="#D6D6D6" />
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="健康豆"
+                        android:textColor="#ff333333"
+                        android:textSize="16dp"
+                        android:layout_width="wrap_content"
+                        android:drawablePadding="9dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/mine_jiankangdou"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/textView32" />
+                    <TextView
+                        android:textColor="#ff333333"
+                        android:text="0"
+                        android:textSize="18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/mine_jiankangdou"
+                        android:layout_marginBottom="12dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignRight="@+id/textView32"
+                        android:layout_alignEnd="@+id/textView32" />
+                    <ImageView
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/mine_bean"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignBottom="@+id/mine_jiankangdou"
+                        android:layout_toLeftOf="@+id/mine_jiankangdou"
+                        android:layout_toStartOf="@+id/mine_jiankangdou" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:background="#F0F0F0"
+                android:layout_width="match_parent"
+                android:layout_height="7dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="当前爱心值"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:id="@+id/textView36"
+            android:layout_marginBottom="15dp"
+            android:layout_above="@+id/imageView16"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/aixinzhi"
+            android:textSize="18dp"
+            android:textColor="#333333"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBottom="@+id/imageView16"
+            android:layout_toRightOf="@+id/imageView16"
+            android:layout_toEndOf="@+id/imageView16" />
+
+        <ImageView
+            android:src="@drawable/heart_fense_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginStart="47dp"
+            android:id="@+id/imageView16"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView36"
+            android:layout_toEndOf="@+id/textView36"
+            android:layout_marginBottom="20dp" />
+    </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/arrowdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text="健康豆颗数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:id="@+id/textView361"
+            android:layout_marginBottom="18dp"
+            android:layout_above="@+id/imageView161"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/jiankangdou"
+            android:textSize="18dp"
+            android:textColor="#333333"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_alignBottom="@+id/imageView161"
+            android:layout_toRightOf="@+id/imageView161"
+            android:layout_toEndOf="@+id/imageView161" />
+
+        <ImageView
+            android:src="@drawable/mine_bean"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginStart="49dp"
+            android:id="@+id/imageView161"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/textView361"
+            android:layout_toEndOf="@+id/textView361"
+            android:layout_marginBottom="21dp" />
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <Button
+                    android:id="@+id/aixin_duihuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/red_round_border"
+                    android:text="确认兑换"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+                <ImageView
+                    android:src="@drawable/rule"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imageView17" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/textview_round_border"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/imageView17"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="18dp">
+
+                    <RelativeLayout
+
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:text="“爱心”兑换“健康豆”，兑换比例为1000:1，即1000个颗粉色爱心可兑换1个健康豆；"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView18"
+                            android:layout_toEndOf="@+id/imageView18" />
+
+                        <ImageView
+                            android:src="@drawable/one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView18"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:text="爱心值起兑数量1000颗粉色爱心，兑换增量最小单位
+是1000颗粉色爱心；"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView128"
+                            android:layout_toEndOf="@+id/imageView128" />
+
+                        <ImageView
+                            android:src="@drawable/two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView128"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:text="健康豆仅用于在助老之家其他平台购买服务和商品时
+享受优惠政策，一经兑换，不予退还，请您谨慎操作；"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView1258"
+                            android:layout_toEndOf="@+id/imageView1258" />
+
+                        <ImageView
+                            android:src="@drawable/three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView1258"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:text="健康豆的有效期以兑换成功实际到账时间开始计算，
+一年内有效，具体优惠详情可参阅助老之家其他平台
+的相关规则。"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/imageView12528"
+                            android:layout_toEndOf="@+id/imageView12528" />
+
+                        <ImageView
+                            android:src="@drawable/four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView12528"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginStart="12dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+        <RelativeLayout
+            android:background="#F0EFF4"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/relativeLayout7">
+
+            <TextView
+                android:id="@+id/game_betting_topic_time"
+                android:text="2017年09月24日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/textview_round_border"
+            android:layout_below="@+id/relativeLayout7"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="#333333"
+                    android:text="#买到回家的车票么？#"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/game_betting_topic_title" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:text="押注结果"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView82"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="19dp"
+                    android:layout_alignTop="@+id/textView82"
+                    android:layout_toRightOf="@+id/textView82"
+                    android:layout_toEndOf="@+id/textView82"
+                    android:id="@+id/linearLayout5">
+                    <TextView
+                        android:id="@+id/game_betting_topic_red_number"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:text="红方23432人"
+                        android:background="@drawable/textview_zhijiao_red"
+                        android:layout_weight="0.3"
+                        android:layout_width="0dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_weight="0.01"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:id="@+id/game_betting_topic_blue_number"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:text="蓝方23432人"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/textview_zhijiao_blue"
+                        android:layout_weight="0.7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:textColor="#999999"
+                    android:text="红方押注人数少，为获胜方（买到 提早下手，搞定往返）"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/winner"
+                    android:layout_below="@+id/linearLayout5"
+                    android:layout_alignLeft="@+id/linearLayout5"
+                    android:layout_alignStart="@+id/linearLayout5" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/textView84"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="上期最佳"
+                    android:textColor="#666666" />
+
+                <TextView
+                    android:id="@+id/best_member_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView84"
+                    android:layout_alignBottom="@+id/textView84"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/textView84"
+                    android:layout_toRightOf="@+id/textView84"
+                    android:text="鲸鱼先生赢得200颗爱心值" />
+
+                </RelativeLayout>
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+
+                    android:textColor="#666666"
+                    android:text="我的押注"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView85"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:text="押红方10颗爱心值，已赢得20颗爱心值"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_team"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignBaseline="@+id/textView85"
+                    android:layout_alignBottom="@+id/textView85"
+                    android:layout_toRightOf="@+id/textView85"
+                    android:layout_toEndOf="@+id/textView85" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

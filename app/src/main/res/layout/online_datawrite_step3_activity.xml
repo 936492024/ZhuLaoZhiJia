@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AC141C">
+
+            <LinearLayout
+                android:id="@+id/huzhu_plan_3_back"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="返回"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="在线填写"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/write_step3"
+            android:id="@+id/imageView10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人信息"
+            android:textColor="#D63B3B"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="求助原因"
+            android:textColor="#D63B3B"
+            android:layout_below="@+id/imageView10"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="补充资料"
+            android:textColor="#D63B3B"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_below="@+id/imageView10"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+        <TextView
+            android:background="#F0F0F0"
+            android:layout_width="match_parent"
+            android:layout_height="7dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="#E1C066"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView1534s" />
+            <TextView
+                android:text="是否有社保，新农合或其他投保情况"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+
+            <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+                android:id="@+id/radiogroup_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:button="@null"
+                        android:text="无"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/radioButton31" />
+
+                    <TextView
+                        android:background="#D6D6D6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp" />
+                    <RadioButton
+                        android:button="@null"
+                        android:text="有"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton8s"
+                        android:layout_below="@+id/textView5s7s"
+                        android:layout_alignLeft="@+id/radioButton31"
+                        android:layout_alignStart="@+id/radioButton31"
+                        android:layout_marginTop="12dp" />
+
+                    <EditText
+                        android:id="@+id/edittext_1"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        android:hint="请输入其他投保情况"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginStart="18dp"
+                        android:layout_below="@+id/textView5s7s"
+                        android:layout_toRightOf="@+id/radioButton8s"
+                        android:layout_toEndOf="@+id/radioButton8s" />
+
+
+                    <TextView
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/textView5s7s"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_centerVertical="true"
+                        android:background="#D6D6D6" />
+                </RelativeLayout>
+            </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="#E1C066"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView153ds" />
+            <TextView
+                android:text="是否有其他报销途径或其他互助平台"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+
+            <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+                android:id="@+id/radiogroup_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:button="@null"
+                        android:text="无"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/radioButton3s" />
+
+                    <TextView
+                        android:background="#D6D6D6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp" />
+                    <RadioButton
+                        android:button="@null"
+                        android:text="有"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/radioButton3s"
+                        android:layout_alignStart="@+id/radioButton3s"
+                        android:layout_marginBottom="18dp"
+                        android:id="@+id/radioButton5ss" />
+
+                    <EditText
+                        android:id="@+id/edittext_2"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        android:hint="请输入其他途径或平台"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignTop="@+id/textView5s71"
+                        android:layout_toRightOf="@+id/radioButton5ss"
+                        android:layout_toEndOf="@+id/radioButton5ss" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/textView5s71"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_centerVertical="true"
+                        android:background="#D6D6D6" />
+                </RelativeLayout>
+            </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="#E1C066"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView153s" />
+            <TextView
+                android:text="是否正在申请理赔或者互助"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+
+
+            <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+                android:id="@+id/radiogroup_3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:button="@null"
+                        android:text="无"
+                        android:checked="true"
+                        android:drawablePadding="5dp"
+                        android:layout_marginTop="10dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/radioButton3" />
+
+                    <TextView
+                        android:background="#D6D6D6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp" />
+                    <RadioButton
+                        android:button="@null"
+                        android:text="有"
+                        android:drawablePadding="5dp"
+                        android:drawableLeft="@drawable/selector_bar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/radioButton3"
+                        android:layout_alignStart="@+id/radioButton3"
+                        android:layout_marginBottom="18dp"
+                        android:id="@+id/radioButton5s" />
+
+                    <EditText
+                        android:id="@+id/edittext_3"
+                        android:textSize="14dp"
+                        android:background="@null"
+                        android:hint="请输入其他理赔或平台"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_below="@+id/textView5s7"
+                        android:layout_toRightOf="@+id/radioButton5s"
+                        android:layout_toEndOf="@+id/radioButton5s" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/textView5s7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_centerVertical="true"
+                        android:background="#D6D6D6" />
+                </RelativeLayout>
+            </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <TextView
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="#E1C066"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textView1573s" />
+            <TextView
+                android:text="所属社区街道，派出所联系方式"
+                android:textColor="#444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="社区街道"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/radioButton34" />
+                    <EditText
+                        android:numeric="integer"
+                        android:textSize="12dp"
+                        android:background="@null"
+                        android:hint="请输入其他理赔或平台"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_alignBaseline="@+id/radioButton5sss"
+                        android:layout_alignBottom="@+id/radioButton5sss"
+                        android:layout_toRightOf="@+id/radioButton5sss"
+                        android:layout_toEndOf="@+id/radioButton5sss"
+                        android:id="@+id/editText_5" />
+                    <TextView
+                        android:background="#D6D6D6"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp" />
+                    <TextView
+                        android:text="派出所"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignLeft="@+id/radioButton34"
+                        android:layout_alignStart="@+id/radioButton34"
+                        android:layout_marginBottom="18dp"
+                        android:id="@+id/radioButton5sss" />
+
+                    <EditText
+                        android:id="@+id/edittext_4"
+                        android:numeric="integer"
+                        android:textSize="12dp"
+                        android:background="@null"
+                        android:hint="请输入社区街道办事处电话"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/radioButton34"
+                        android:layout_alignBottom="@+id/radioButton34"
+                        android:layout_alignLeft="@+id/editText_5"
+                        android:layout_alignStart="@+id/editText_5" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/textView5sss7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5sp"
+                        android:layout_centerVertical="true"
+                        android:background="#D6D6D6" />
+                </RelativeLayout>
+        </LinearLayout>
+        
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/textView5s714"
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:layout_centerVertical="true"
+            android:background="#D6D6D6" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_weight="1.5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:background="@drawable/textview_round_border"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:background="@drawable/textview_round_border"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:background="@drawable/textview_round_border"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                <!--</RelativeLayout>-->
+                <!--<RelativeLayout-->
+                    <!--android:background="@drawable/textview_round_border"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="50dp"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                    <!--<TextView-->
+                        <!--android:background="#CCCCCC"-->
+                        <!--android:layout_width="1dp"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_centerHorizontal="true" />-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_weight="0.3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <Button
+                    android:id="@+id/sure_onload"
+                    android:text="确认完成"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/red_round_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

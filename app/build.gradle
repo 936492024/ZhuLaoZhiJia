@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+        applicationId "com.zhulaozhijias.zhulaozhijia"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 38
+        versionName "1.03.78"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 设置支持的SO库架构
+//            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories{
+    flatDir{
+        mavenCentral()
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.0'
+    testCompile 'junit:junit:4.12'
+
+
+    compile 'com.android.support:recyclerview-v7:25.3.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile files('libs/json-lib-2.4-all-jdk15.jar')
+    compile 'com.squareup.okhttp3:okhttp:3.9.1'
+    compile 'com.android.support:design:25.3.0'
+    compile 'fm.jiecao:jiecaovideoplayer:4.6.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile files('libs/badgeview.jar')
+    compile files('libs/eventbus.jar')
+    compile files('libs/alipaySdk-20170922.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.allenliu.versionchecklib:library:1.8.2'
+    compile files('libs/ShareSDK-QZone-3.1.1.jar')
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+}

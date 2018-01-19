@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <color name="grey">#D6D6D6</color>
+    <color name="grey_1">#3D3D3D</color>
+    <color name="normal_gray">#9b9b9b</color>
+    <color name="home_page">#666666</color>
+    <color name="system_color">#AC141C</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="color999999">#000</color>
+    <color name="little_grey">#EBEBEB</color>
+    <color name="middle_grey">#CACACA</color>
+    <color name="greys">#DAD9DB</color>
+    <color name="trans">#00000000</color>
+    <color name="orange1">#ffc62d</color>
+    <color name="orange2">#FF850D</color>
+    <color name="divider">#ffd2d2d2</color>
+    <color name="foundation">#AC141C</color>
+    <color name="half_transparent">#4f000000</color>
+    <color name="half_transparent_2">#9f000000</color>
+    <color name="number_scroll">#F94646</color>
+
+</resources>

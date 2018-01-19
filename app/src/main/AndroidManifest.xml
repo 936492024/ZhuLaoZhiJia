@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhulaozhijias.zhulaozhijia">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera2.full"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name=".base.BPApplication"
+        android:theme="@style/AppTheme"
+        >
+
+        <activity android:name=".activity.StatcActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1106327369" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data android:name="Mob-AppKey" android:value="20e011b075bd0"/>
+        <meta-data android:name="Mob-AppSecret" android:value="b0fd7052c48b55e7501f54a0c7c68366"/>
+
+        <service android:name=".service.ServiceLogin">
+            <intent-filter>
+                <action android:name=".ServiceDemo"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.DemoService"/>
+        <service android:name=".service.DemoService_2"/>
+        <activity
+            android:name=".widgets.updata.CustomVersionDialogActivity"
+            android:theme="@style/versionCheckLibvtransparentTheme" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+
+
+        //支付宝
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+            android:launchMode="singleInstance"
+        <activity android:name="com.zhulaozhijias.zhulaozhijia.activity.GuideActivity"/>
+
+
+        <activity android:name=".activity.HuZhu_AnLiActivity"/>
+        <activity android:name=".activity.MapListActivity"/>
+        <activity android:name=".activity.MapActivity"/>
+        <activity android:name=".activity.DetailsActivity"/>
+        <activity android:name=".activity.Heart_RankActivity"/>
+        <activity android:name=".activity.HuZhu_PlanActivity"/>
+        <activity android:name=".activity.Join_PlanActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            />
+        <activity android:name=".activity.Order_PayActivity"/>
+        <activity android:name=".activity.Invite_FriendActivity"/>
+        <activity android:name=".activity.Online_DataWrite_Step1Activity"/>
+        <activity android:name=".activity.Online_DataWrite_Step2Activity"/>
+        <activity android:name=".activity.Online_DataWrite_Step3Activity"/>
+        <activity android:name=".activity.Mine_RechargeActiviy"/>
+        <activity android:name=".activity.Mine_AcountActivity"/>
+        <activity android:name=".activity.HuZhu_Invition"/>
+        <activity android:name=".activity.JuZhuJiLu_Activity"/>
+        <activity android:name=".activity.Mine_SetActivity"/>
+        <activity android:name=".activity.Heart_ExchangeActivity"/>
+        <activity android:name=".activity.Pay_PassWordAcivity_2"/>
+        <activity android:name=".activity.Pay_PassWordAcivity_1"/>
+        <activity android:name=".activity.HuZhu_PingZhengActivity"/>
+        <activity android:name=".activity.Mine_Acount_Recharge_DetailActivity"/>
+        <activity android:name=".activity.Mine_DuiHuanJiLuActivity"/>
+        <activity android:name=".activity.Mine_Game_RecordActivity"/>
+        <activity android:name=".activity.Mine_GongyueActvity"/>
+        <activity android:name=".activity.Mine_ProblemActivity" />
+        <activity android:name=".activity.Make_PasswordActivity"/>
+        <activity android:name=".activity.Mine_JieBangActivity_1"/>
+        <activity android:name=".activity.Mine_YanZhengPhone_Activity_2"/>
+        <activity android:name=".activity.Mine_YanZhengPhone_Activity_3"/>
+        <activity android:name=".activity.Game_BettingActivity"/>
+        <activity android:name=".activity.Game_ClockActivity"/>
+        <activity android:name=".activity.Game_Time_BankActivity"/>
+        <activity android:name=".activity.HuZhu_PlanActivity_GongYue_1"/>
+        <activity android:name=".activity.HuZhu_PlanActivity_GongYue_2"/>
+        <activity android:name=".activity.HuZhu_PlanActivity_GongYue_3"/>
+        <activity android:name=".activity.TiShi_Activity"/>
+        <activity android:name=".activity.Game_Betting_WanGqIActivity"/>
+        <activity android:name=".activity.Forget_PassWordActivity"/>
+        <activity android:name=".activity.Game_Clock_Exploits_Activity"/>
+        <activity android:name=".activity.Order_PayActivity_2"/>
+        <activity android:name=".activity.Wechat_LoginActivity"/>
+        <activity android:name=".activity.FoundationActivity"/>
+        <activity android:name=".activity.TrendsActivity"/>
+
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.MainActivity"/>
+        <activity
+            android:name="com.baidu.ocr.ui.camera.CameraActivity"
+            android:configChanges="screenSize|orientation"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"/>
+
+    </application>
+</manifest>

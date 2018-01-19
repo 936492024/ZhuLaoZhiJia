@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:descendantFocusability="blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AC141C">
+            <LinearLayout
+                android:id="@+id/huzhu_plan_back"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="返回"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="计划详情"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/jiaodian"
+                    android:background="@drawable/banners"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="290dp"
+                    />
+
+                <TextView
+                    android:textSize="26dp"
+                    android:textColor="#ffa210"
+                    android:text="全民防癌互助计划"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="25dp"
+                    android:id="@+id/textView87" />
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView87"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                <TextView
+                    android:lineSpacingExtra="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#333333"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="       互帮互助基金平台是由四川助老之家健康产业有限公司发起，经四川省养老助老服务发展基金会批准成立的公益专项基金。平台倡导“我为人人，人人为我”的互助理念，针对癌症筛查、预防、诊治以及术后康复进行救助和帮扶，为特别困难的家庭和患者提供健康服务。"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:id="@+id/textView75"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:lineSpacingExtra="3dp"
+                    android:textSize="15dp"
+                    android:textColor="#333333"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="       加入互助计划通过静默期后，如果不幸患癌，互助会员可获得互帮互助基金平台提供的最高30万健康救助金。"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView57"
+                    android:layout_below="@+id/textView75"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/huzhu_planbaozhang_number"
+                            android:textSize="17dp"
+                            android:textColor="#FF2727"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:text="已保障人数" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D6D6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/huzhu_planxinzeng_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="0"
+                            android:textColor="#FF2727"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:text="新增人数"
+                            android:textSize="11dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D6D6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/huzhu_planhuojuan_number"
+                            android:textSize="17dp"
+                            android:textColor="#FF2727"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:text="0" />
+
+                        <TextView
+                            android:textSize="11dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:text="获捐人数" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+            android:background="#D6D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="13dp"
+                        android:background="#E1C066"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:textSize="16dp"
+                        android:text="公约条款"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:id="@+id/vip_gongyue"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <TextView
+                    android:text="《互帮互助基金平台会员公约》"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" />
+
+                <ImageView
+                    android:src="@mipmap/arrowright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:id="@+id/fangai_plan"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="《全民防癌互助计划》"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" />
+
+                <ImageView
+                    android:src="@mipmap/arrowright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <RelativeLayout
+                android:id="@+id/jiankang_yaoqiu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <TextView
+                    android:text="《健康要求》"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp" />
+
+                <ImageView
+                    android:src="@mipmap/arrowright"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <TextView
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="13dp"
+                        android:background="#E1C066"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView153" />
+                    <TextView
+                        android:textSize="16dp"
+                        android:text="互助规则"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp" />
+
+            <com.zhulaozhijias.zhulaozhijia.widgets.CustomExpandableListView
+                android:id="@+id/expand_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.zhulaozhijias.zhulaozhijia.widgets.CustomExpandableListView>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_marginBottom="13dp"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:background="#E1C066"-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:id="@+id/textView1535" />-->
+                    <!--<TextView-->
+                        <!--android:text="求助流程"-->
+                        <!--android:textColor="#444"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="#D6D6D6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp" />-->
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="280dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<ImageView-->
+                                <!--android:src="@mipmap/yuandian"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--android:id="@+id/imageView7" />-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                            <!--<ImageView-->
+                                <!--android:src="@mipmap/yuandian"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                            <!--<ImageView-->
+                                <!--android:src="@mipmap/yuandian"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                            <!--<ImageView-->
+                                <!--android:src="@mipmap/yuandian"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+                            <!--<TextView-->
+                                <!--android:background="#D6D6D6"-->
+                                <!--android:layout_width="1dp"-->
+                                <!--android:layout_height="15dp"-->
+                                <!--android:layout_alignParentTop="true"-->
+                                <!--android:layout_centerHorizontal="true" />-->
+                            <!--<ImageView-->
+                                <!--android:src="@mipmap/yuandian"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_centerHorizontal="true"-->
+                                <!--/>-->
+
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_weight="4"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#333333"-->
+                                <!--android:text="求助详情"-->
+                                <!--android:textSize="14dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="拨打客服电话"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:id="@+id/textView214"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true" />-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="  028-96552  "-->
+                                <!--android:textColor="#AC141C"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:id="@+id/plan_phone_2"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_toRightOf="@+id/textView214"-->
+                                <!--android:layout_toEndOf="@+id/textView214" />-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="申请求助"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignBaseline="@+id/plan_phone_2"-->
+                                <!--android:layout_alignBottom="@+id/plan_phone_2"-->
+                                <!--android:layout_toRightOf="@+id/plan_phone_2"-->
+                                <!--android:layout_toEndOf="@+id/plan_phone_2" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#333333"-->
+                                <!--android:text="提交资料"-->
+                                <!--android:textSize="14dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                 <!--/>-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="准备申请资料齐全后，在线提交或邮寄"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#333333"-->
+                                <!--android:text="事件调查"-->
+                                <!--android:textSize="14dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="平台初审并交付权威机构调查核实"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#333333"-->
+                                <!--android:text="公示事件"-->
+                                <!--android:textSize="14dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="向全体会员公示"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="0dp">-->
+                        <!--<RelativeLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="match_parent">-->
+
+                            <!--<TextView-->
+                                <!--android:textColor="#333333"-->
+                                <!--android:text="资金给付"-->
+                                <!--android:textSize="14dp"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_centerVertical="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true"-->
+                                <!--/>-->
+                            <!--<TextView-->
+                                <!--android:textSize="12dp"-->
+                                <!--android:text="公示通过无异议后打款"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_alignParentBottom="true"-->
+                                <!--android:layout_alignParentLeft="true"-->
+                                <!--android:layout_alignParentStart="true" />-->
+                        <!--</RelativeLayout>-->
+                    <!--</LinearLayout>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+
+
+
+            <TextView
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginBottom="13dp"
+                        android:layout_marginTop="13dp"
+                        android:background="#E1C066"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/textView1535s" />
+                    <TextView
+                        android:textSize="16dp"
+                        android:text="服务保障"
+                        android:textColor="#333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:drawableTop="@mipmap/kekao"
+                            android:textSize="12dp"
+                            android:textColor="#55B0F9"
+                            android:text="平台资金安全"
+                            android:drawablePadding="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:drawableTop="@mipmap/shijian"
+                            android:textSize="12dp"
+                            android:textColor="#55B0F9"
+                            android:drawablePadding="3dp"
+                            android:text="事件真实可查"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:drawableTop="@mipmap/liuchen"
+                            android:textSize="12dp"
+                            android:textColor="#55B0F9"
+                            android:text="流程透明公开"
+                            android:drawablePadding="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="18dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+                    <!--<TextView-->
+                        <!--android:layout_marginBottom="13dp"-->
+                        <!--android:layout_marginTop="13dp"-->
+                        <!--android:background="#E1C066"-->
+                        <!--android:layout_width="2dp"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:layout_alignParentStart="true"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                         <!--/>-->
+                    <!--<TextView-->
+                        <!--android:text="常见问题"-->
+                        <!--android:textColor="#333"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--/>-->
+                <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+        <!--<TextView-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="#D6D6D6"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp" />-->
+            <!--<com.zhulaozhijias.zhulaozhijia.widgets.CustomExpandableListView-->
+                <!--android:id="@+id/expand_list2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+            <!--</com.zhulaozhijias.zhulaozhijia.widgets.CustomExpandableListView>-->
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="点击电话咨询："
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:text="028-96552"
+                            android:textColor="#AC141C"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/plan_phone"
+                            android:layout_centerVertical="true"
+                             />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+
+                android:background="#D6D6D6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+            <RelativeLayout
+                android:id="@+id/invite_share"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="邀请好友"
+                    android:textSize="12dp"
+                    android:drawableTop="@mipmap/gift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/confirm_join"
+                android:background="#d63b3b"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="15dp"
+                    android:text="我要加入"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="310dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/cancel"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:id="@+id/cancel_red"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:text="确认押注"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView93"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView93"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:text="当前爱心（个）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/textView94"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="11dp" />
+
+            <TextView
+                android:id="@+id/red_love_code_1"
+                android:textSize="15dp"
+                android:layout_marginRight="50dp"
+                android:textColor="#666666"
+                android:text="100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView94"
+                android:layout_alignBottom="@+id/textView94"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="#D6D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView9s4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:text="押红方（注）"
+                android:textColor="#FE5E5F"
+                android:textSize="15dp" />
+
+            <com.zhulaozhijias.zhulaozhijia.widgets.Ammount_view
+                android:id="@+id/amount_view"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                app:btnTextSize="20sp"
+                app:btnWidth="20dp"
+                app:tvWidth="20dp"
+                android:layout_marginRight="16sp"
+                android:layout_marginBottom="7dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:background="#D6D6D6"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:text="需要爱心（个）"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginStart="18dp"
+                android:id="@+id/textView9ss4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/red_love_code_2"
+                android:textSize="15dp"
+                android:layout_marginRight="55dp"
+                android:textColor="#666666"
+                android:text="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView9ss4"
+                android:layout_alignBottom="@+id/textView9ss4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/red_sure"
+                android:textSize="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:textColor="@color/system_color"
+                android:background="@drawable/textview_round_border_red"
+                android:text="果断下注"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

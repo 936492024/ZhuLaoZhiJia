@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.zhulaozhijias.zhulaozhijia.widgets.photo.FilterImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:padding="0.1dip"
+        android:scaleType="centerCrop" 
+        android:alpha="0.8"/>
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/photo_not_select"
+        android:tag="false"
+        android:padding="20dp" />
+
+</RelativeLayout>

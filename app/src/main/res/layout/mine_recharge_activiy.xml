@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AC141C">
+
+            <LinearLayout
+                android:id="@+id/huzhu_recharge_back"
+                android:layout_width="55dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+
+                            android:src="@mipmap/back_white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="返回"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="充值"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#E1C066"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/textView153" />
+        <TextView
+            android:id="@+id/text_recharge_2"
+            android:text="充值金额"
+            android:textColor="#444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:background="#D6D6D6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1sp" />
+    <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radioButton_pay_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="1元"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_pay_2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="2元"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_pay_3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="5元"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_pay_4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="10元"
+                />
+
+            <EditText
+                android:id="@+id/myRadioGroup_2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:hint="自定义金额     (元)" />
+
+        </LinearLayout>
+    </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+
+    <TextView
+        android:background="#F0F0F0"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#E1C066"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="17dp"
+            android:id="@+id/textViews153" />
+        <TextView
+            android:text="支付方式"
+            android:textColor="#444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_weight="5"
+           android:layout_width="0dp"
+           android:layout_height="match_parent">
+           <TextView
+               android:background="#D6D6D6"
+               android:layout_width="match_parent"
+               android:layout_height="1px" />
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:layout_weight="1.1"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent">
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <ImageView
+                               android:src="@drawable/weixin"
+                               android:layout_width="37dp"
+                               android:layout_height="37dp"
+                               android:layout_centerVertical="true"
+                               android:layout_centerHorizontal="true" />
+                       </RelativeLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_weight="5"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent">
+                       <RelativeLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <TextView
+                               android:textColor="#333333"
+                               android:textSize="13dp"
+                               android:text="微信支付"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="3dp"
+                               android:layout_alignParentBottom="true"
+                               android:layout_alignParentLeft="true"
+                               android:layout_alignParentStart="true" />
+                       </RelativeLayout>
+                       <RelativeLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+                           <TextView
+                               android:layout_marginTop="3dp"
+                               android:text="微信安全支付"
+                               android:textSize="11dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               />
+                       </RelativeLayout>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+           </LinearLayout>
+
+           <TextView
+               android:background="#D6D6D6"
+               android:layout_width="match_parent"
+               android:layout_height="1px" />
+           <LinearLayout
+               android:layout_weight="1"
+               android:layout_width="match_parent"
+               android:layout_height="0dp">
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+                   <LinearLayout
+                       android:layout_weight="1.1"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent">
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <ImageView
+                               android:src="@drawable/zhifubao"
+                               android:layout_width="37dp"
+                               android:layout_height="37dp"
+                               android:layout_centerVertical="true"
+                               android:layout_centerHorizontal="true" />
+                       </RelativeLayout>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:orientation="vertical"
+                       android:layout_weight="5"
+                       android:layout_width="0dp"
+                       android:layout_height="match_parent">
+                       <RelativeLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+                           <TextView
+                               android:textColor="#333333"
+                               android:textSize="13dp"
+                               android:text="支付宝支付"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginBottom="3dp"
+                               android:layout_alignParentBottom="true"
+                               android:layout_alignParentLeft="true"
+                               android:layout_alignParentStart="true" />
+                       </RelativeLayout>
+                       <RelativeLayout
+                           android:layout_weight="1"
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+                           <TextView
+                               android:layout_marginTop="3dp"
+                               android:text="支付宝安全支付"
+                               android:textSize="11dp"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentLeft="true"
+                               />
+                       </RelativeLayout>
+
+                   </LinearLayout>
+
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+        <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+            android:id="@+id/mine_recharge_radiobutton"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="1"
+                    android:background="#D6D6D6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <RadioButton
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/selector_bar2"
+                    android:src="@mipmap/unselected"
+                    android:layout_below="@+id/radioButton2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:background="#D6D6D6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/textView30" />
+                <RadioButton
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/selector_bar2"
+                    android:src="@mipmap/unselected"
+                    android:id="@+id/radioButton2"
+                    android:layout_above="@+id/textView30"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+        </LinearLayout>
+    <RelativeLayout
+        android:background="#FAFAFA"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/mine_recharge_sure"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp">
+            <TextView
+                android:text="同意并接受"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/xieyi"
+                android:layout_alignBottom="@+id/xieyi"
+                android:id="@+id/textView41" />
+            <TextView
+                android:textColor="@color/system_color"
+                android:text="《互帮互助基金平台捐赠协议》"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/xieyi"
+                android:layout_toRightOf="@+id/textView41"
+                android:layout_toEndOf="@+id/textView41" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/mine_recharge_sure"
+            android:text="确认充值"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/red_round_border"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="67dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

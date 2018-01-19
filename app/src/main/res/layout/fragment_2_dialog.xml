@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="随手捐"
+            android:layout_marginLeft="15dp"
+            android:textColor="#333333"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:layout_marginStart="15dp"
+            android:layout_alignBaseline="@+id/textView39"
+            android:layout_alignBottom="@+id/textView39"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:text="一份爱心，一份功德"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:id="@+id/textView39"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView33"
+            android:layout_toEndOf="@+id/textView33" />
+    </RelativeLayout>
+
+    <com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup
+        android:id="@+id/myRadioGroup_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radioButton_pay_1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rdobtn_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="1元"
+             />
+
+        <RadioButton
+            android:id="@+id/radioButton_pay_2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rdobtn_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="2元"
+             />
+
+        <RadioButton
+            android:id="@+id/radioButton_pay_3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rdobtn_selecter"
+            android:button="@null"
+            android:gravity="center"
+            android:text="5元"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_pay_4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:text="10元"
+                 />
+            <EditText
+                android:id="@+id/myRadioGroup_2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/rdobtn_selecter"
+                android:button="@null"
+                android:gravity="center"
+                android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+                android:hint="自定义金额     (元)" />
+
+        </LinearLayout>
+    </com.zhulaozhijias.zhulaozhijia.widgets.MyRadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:text="同意并接受"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/xieyi"
+            android:layout_alignBottom="@+id/xieyi"
+            android:id="@+id/textView41" />
+        <TextView
+            android:text="《互帮互助基金平台捐赠协议》"
+            android:textColor="@color/system_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/xieyi"
+            android:layout_toRightOf="@+id/textView41"
+            android:layout_toEndOf="@+id/textView41" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_juankuan"
+        android:background="#D63B3B"
+        android:text="立即捐款"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView41"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true" />
+</LinearLayout>
